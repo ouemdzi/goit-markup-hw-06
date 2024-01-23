@@ -667,13 +667,15 @@ img {
 }
 
 .modal {
-  width: 408px;
-  min-height: 584px;
+  /* width: 408px; */
+  min-width: 288px;
+  /* min-height: 584px; */
   border-radius: 4px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-  padding: 72px 24px 24px 24px;
+  /* padding: 72px 24px 24px 24px; */
+  padding: 24px 16px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -720,6 +722,7 @@ img {
 }
 
 .modal-text {
+  width: 256px;
   color: #2e2f42;
   text-align: center;
   font-size: 16px;
@@ -727,6 +730,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  margin-top: 24px;
+  display: block;
 }
 
 .under-title {
@@ -744,7 +749,8 @@ img {
 }
 
 .modal-input {
-  width: 100%;
+  /* width: 100%; */
+  width: 256px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -854,7 +860,8 @@ img {
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  display: inline-flex;
+  /* display: inline-flex; */
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -862,7 +869,7 @@ img {
   color: #4d5ae5;
   font-style: normal;
   text-decoration-line: underline;
-  display: inline-block;
+  display: inline-flex;
   margin-left: 3px;
 }
 
