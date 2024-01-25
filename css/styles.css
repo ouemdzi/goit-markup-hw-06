@@ -90,7 +90,7 @@ img {
   content: "";
   position: absolute;
   width: 100%;
-  height: 4px;
+  min-height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
   left: 0px;
@@ -151,13 +151,23 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-img.jpg);
+    url(../images/title-bg-mob-1x.jpg);
   /* max-width: 1440px; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 72px 16px;
   margin: 0 auto;
+}
+@media (min-resolution: 192dpi) {
+  .title-section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/title-bg-mob-2x.jpg);
+  }
 }
 
 .header-title {
@@ -171,7 +181,6 @@ img {
   font-weight: 700;
   /* background-color: #2e2f42; */
   max-width: 496px;
-  margin: 0 auto;
 }
 
 .header-button {
@@ -253,15 +262,15 @@ img {
 }
 
 .adv-item {
-  width: 288px;
+  min-width: 288px;
 }
 
 .adv-image {
   background-color: #f4f4fd;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  width: 264px;
-  height: 112px;
+  min-width: 264px;
+  min-height: 112px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -347,8 +356,8 @@ img {
 /* li */
 .socials-item {
   margin-top: 8px;
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   background-color: #4d5ae5;
   border-radius: 50%;
   display: flex;
@@ -520,7 +529,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  width: 288px;
+  min-width: 288px;
   text-align: left;
   margin-bottom: 72px;
 }
@@ -613,8 +622,8 @@ img {
 }
 
 .footer-input {
-  width: 288px;
-  height: 40px;
+  min-width: 288px;
+  min-height: 40px;
   padding-left: 16px;
   background-color: transparent;
   border-radius: 4px;
@@ -674,8 +683,7 @@ img {
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-  /* padding: 72px 24px 24px 24px; */
-  padding: 24px 16px;
+  padding: 72px 16px 24px 16px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -692,8 +700,8 @@ img {
   position: absolute;
   top: 24px;
   right: 24px;
-  width: 24px;
-  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -722,15 +730,13 @@ img {
 }
 
 .modal-text {
-  width: 256px;
+  min-width: 256px;
   color: #2e2f42;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 16px;
-  margin-top: 24px;
   display: block;
 }
 
@@ -750,8 +756,8 @@ img {
 
 .modal-input {
   /* width: 100%; */
-  width: 256px;
-  height: 40px;
+  min-width: 256px;
+  min-height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
@@ -770,7 +776,7 @@ img {
 
 .modal-textarea {
   width: 100%;
-  height: 120px;
+  min-height: 120px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   position: relative;
@@ -821,8 +827,8 @@ img {
 
 .checkbox-svg {
   fill: #ffffff;
-  width: 10px;
-  height: 8px;
+  min-width: 10px;
+  min-height: 8px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -838,12 +844,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  fill: transparent;
-  margin-right: 8px;
-  position: relative;
+  padding-right: 10px;
 }
 
 .input-checkbox:checked + .policy-text .privacy-span {
@@ -852,7 +853,8 @@ img {
   fill: #f4f4fd;
 }
 
-.policy-text {
+.policy-text-div {
+  display: inline-block;
   color: #8e8f99;
   font-family: Roboto;
   font-style: normal;
@@ -860,17 +862,16 @@ img {
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  /* display: inline-flex; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  min-width: 231px;
+  margin-left: 8px;
+}
+.policy-text {
+  display: inline-flex;
 }
 .policy-link {
   color: #4d5ae5;
   font-style: normal;
   text-decoration-line: underline;
-  display: inline-flex;
-  margin-left: 3px;
 }
 
 .submit-btn {

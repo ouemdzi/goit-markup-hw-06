@@ -486,7 +486,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop visually-hidden">
       <div class="modal">
         <button type="button" class="close-btn">
           <svg class="close-svg" width="8" height="8">
@@ -555,13 +555,15 @@
               class="input-checkbox visually-hidden"
             />
             <label for="user-privacy" class="policy-text">
-              <span class="privacy-span">
+              <div class="privacy-span">
                 <svg class="checkbox-svg" width="10" height="8">
                   <use href="./images/icons.svg#icon-yes-svg"></use>
                 </svg>
-              </span>
-              I accept the terms and conditions of the
-              <a href="/" class="policy-link">Privacy Policy</a>
+              </div>
+              <div class="policy-text-div">
+                I accept the terms and conditions of the
+                <a href="" class="policy-link">Privacy Policy</a>
+              </div>
             </label>
           </div>
           <button type="submit" class="submit-btn">Send</button>
