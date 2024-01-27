@@ -87,14 +87,12 @@
   }
 
   .adv-item {
-    min-width: calc((100% - 24px) / 2);
+    width: calc((100% - 24px) / 2);
   }
   .advantages {
     text-align: left;
   }
-  .advantages-text {
-    text-align: left;
-  }
+
   /* ------------------------TEAM----------------------- */
 
   .team-section {
@@ -112,4 +110,34 @@
   }
 
   /* ---------------------PORTFOLIO-------------------- */
+
+  .portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  /* -------------------FOOTER----------------- */
+
+  .footer {
+    padding: 96px 164px 96px 108px;
+  }
+  .footer-container {
+    flex-direction: row;
+    column-gap: 24px;
+  }
+
+  .footer-logo {
+    align-self: flex-start;
+  }
+
+  .media-title {
+    text-align: left;
+  }
+
+  /* -------------------FORM----------------- */
 }

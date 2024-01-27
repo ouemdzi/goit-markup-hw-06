@@ -309,7 +309,8 @@ img {
 /* ==============ADVANTAGES=========================== */
 
 .adv-section {
-  padding: 96px 16px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .adv-container {
