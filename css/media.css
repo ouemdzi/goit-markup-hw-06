@@ -1,0 +1,115 @@
+/* ------------------>TABLET<----------------< */
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .header-container {
+    justify-content: flex-start;
+    padding: 0 16px;
+  }
+
+  .head-logo {
+    margin-right: 120px;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-address {
+    display: flex;
+  }
+
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .address-links {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+
+  .menu-burger-btn {
+    display: none;
+  }
+
+  /* -------------------TITLE------------------------- */
+
+  .title-section {
+    min-height: 436px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-tablet-1x.jpg);
+    padding: 112px 136px;
+    /* max-width: 1440px; */
+  }
+
+  @media screen and (min-resolution: 192dpi) {
+    .title-section {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bg-tablet-2x.jpg);
+    }
+  }
+
+  .header-title {
+    min-width: 496px;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+  }
+
+  .header-button {
+    margin-top: 36px;
+  }
+
+  /* -----------------ADVANTAGES----------------- */
+
+  .adv-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .adv-item {
+    min-width: calc((100% - 24px) / 2);
+  }
+  .advantages {
+    text-align: left;
+  }
+  .advantages-text {
+    text-align: left;
+  }
+  /* ------------------------TEAM----------------------- */
+
+  .team-section {
+    padding: 96px 108px;
+  }
+
+  .team-list {
+    flex-direction: row;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .team-item {
+    min-width: calc((100% - 24px) / 2);
+  }
+
+  /* ---------------------PORTFOLIO-------------------- */
+}
