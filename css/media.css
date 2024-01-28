@@ -111,6 +111,11 @@
 
   /* ---------------------PORTFOLIO-------------------- */
 
+  .wrap-text {
+    overflow: hidden;
+    opacity: 0;
+  }
+
   .portfolio-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -124,19 +129,45 @@
   /* -------------------FOOTER----------------- */
 
   .footer {
-    padding: 96px 164px 96px 108px;
+    padding: 96px 148px 96px 108px;
   }
   .footer-container {
+    display: flex;
     flex-direction: row;
-    column-gap: 24px;
+    padding: 0;
+  }
+
+  .footer-left {
   }
 
   .footer-logo {
     align-self: flex-start;
   }
 
+  .footer-text {
+    width: 264px;
+  }
+
+  .footer-social {
+    align-self: flex-start;
+    margin-left: 24px;
+  }
+
   .media-title {
     text-align: left;
+  }
+
+  .socials-item {
+  }
+
+  .form-div {
+    display: inline-block;
+  }
+
+  .subscribe-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
   }
 
   /* -------------------FORM----------------- */
