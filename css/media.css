@@ -137,9 +137,6 @@
     padding: 0;
   }
 
-  .footer-left {
-  }
-
   .footer-logo {
     align-self: flex-start;
   }
@@ -157,9 +154,6 @@
     text-align: left;
   }
 
-  .socials-item {
-  }
-
   .form-div {
     display: inline-block;
   }
@@ -171,4 +165,13 @@
   }
 
   /* -------------------FORM----------------- */
+
+  .modal {
+    width: 408px;
+    padding: 72px 25px 24px 23px;
+  }
+
+  .modal-text {
+    margin-bottom: 16px;
+  }
 }
