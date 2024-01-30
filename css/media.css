@@ -40,6 +40,26 @@
     display: none;
   }
 
+  /* -----------------------MENU----------------------- */
+
+  .menu-nav-list {
+    align-items: center;
+  }
+
+  .menu-close-btn {
+    margin-bottom: 100px;
+  }
+
+  .menu-address-list {
+    align-items: center;
+  }
+
+  .tablet-menu-socials {
+    margin-top: 400px;
+    display: flex;
+    justify-content: center;
+  }
+
   /* -------------------TITLE------------------------- */
 
   .title-section {
@@ -187,9 +207,7 @@
   /* ---------HEADER------------ */
 
   .header-container {
-    margin: 0;
-    justify-content: center;
-    margin-left: 156px;
+    padding: 0;
   }
 
   .address-list {
@@ -229,7 +247,7 @@
   }
 
   .header-title {
-    text-align: center;
+    font-size: 56px;
   }
 
   /* -----------------ADVANTAGES----------------- */
@@ -286,4 +304,14 @@
   }
 
   /* -------------------FOOTER----------------- */
+
+  .footer {
+    display: flex;
+  }
+
+  /* -------------------FORM----------------- */
+
+  .modal {
+    padding: 72px 24px 24px 24px;
+  }
 }
