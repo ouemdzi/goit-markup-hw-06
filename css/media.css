@@ -70,7 +70,7 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/bg-tablet-1x.jpg);
-    padding: 112px 136px;
+    padding: 112px 0;
   }
 
   @media screen and (min-resolution: 192dpi) {
@@ -84,10 +84,11 @@
     }
   }
 
-  .header-title {
+  .title-title {
     min-width: 496px;
     text-align: center;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
@@ -103,7 +104,8 @@
   .adv-list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    row-gap: 72px;
+    column-gap: 24px;
   }
 
   .adv-item {
@@ -116,17 +118,23 @@
   /* ------------------------TEAM----------------------- */
 
   .team-section {
-    padding: 96px 108px;
+    padding: 96px 0;
   }
 
   .team-list {
+    justify-content: center;
     flex-direction: row;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 64px;
     flex-wrap: wrap;
   }
 
   .team-item {
     width: calc((100% - 24px) / 2);
+  }
+
+  .socials {
+    gap: 16px;
   }
 }
 
@@ -147,6 +155,10 @@
   width: calc((100% - 24px) / 2);
 }
 
+.app-container {
+  box-shadow: none;
+}
+
 /* -------------------FOOTER----------------- */
 
 .footer {
@@ -158,12 +170,17 @@
   padding: 0;
 }
 
+.footer-left {
+  margin-right: 120px;
+}
+
 .footer-logo {
   align-self: flex-start;
 }
 
 .footer-text {
   width: 264px;
+  margin-bottom: 0;
 }
 
 .footer-social {
@@ -176,7 +193,7 @@
 }
 
 .form-div {
-  display: inline-block;
+  margin-left: auto;
 }
 
 .subscribe-form {
@@ -209,7 +226,9 @@
   .header-container {
     padding: 0;
   }
-
+  .head-logo {
+    margin-right: 76px;
+  }
   .address-list {
     flex-direction: row;
     gap: 40px;
@@ -246,7 +265,7 @@
     }
   }
 
-  .header-title {
+  .title-title {
     font-size: 56px;
   }
 
@@ -254,7 +273,10 @@
 
   .adv-list {
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: center;
+  }
+  .adv-item {
+    width: calc((100% - 72px) / 4);
   }
   .advantages-text {
     width: 264px;
@@ -281,11 +303,14 @@
   /* -------------------TEAM------------------- */
 
   .team-section {
-    padding: 120px 156px;
+    padding: 120px 0;
   }
 
   .team-list {
     flex-wrap: nowrap;
+  }
+  .socials {
+    gap: 24px;
   }
 
   /* ---------------------PORTFOLIO-------------------- */
@@ -296,7 +321,8 @@
   }
 
   .portfolio-list {
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
   }
 
   .portfolio-item {
@@ -307,9 +333,23 @@
 
   .footer {
     display: flex;
+    padding: 100px 0;
+  }
+  .footer-social {
+    margin-left: 0;
   }
 
-  /* -------------------FORM----------------- */
+  /* ---------------FOOTER-FORM------------------------ */
+  .form-div {
+    align-self: flex-start;
+    margin-left: 60px;
+  }
+
+  .form-title {
+    margin-right: auto;
+  }
+
+  /* -------------------MODAL-FORM----------------- */
 
   .modal {
     padding: 72px 24px 24px 24px;
